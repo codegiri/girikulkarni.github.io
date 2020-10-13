@@ -13,7 +13,10 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage[absolute]{textpos}
+\usepackage{tikz}
 \usepackage[french, british]{babel}
+\usepackage{datetime2}
 \usepackage{xcolor}
 \usepackage[%
 		backend=biber,%
@@ -28,7 +31,7 @@
 \usepackage{ocgx2}
 
 \newif\iflangfrench
-\langfrenchtrue
+\langfrenchfalse
 \newcommand{\checklang}[2]{%
 	\ifthenelse{\boolean{langfrench}}{#2}{#1}%
 }
@@ -39,8 +42,14 @@
 \newcolumntype{M}{>{\hsize=.5\hsize\linewidth=\hsize\bfseries\raggedleft\arraybackslash}X}
 \newcolumntype{D}{>{\hsize=1\hsize\linewidth=\hsize\raggedright\arraybackslash}X}
 
+\setlength{\TPHorizModule}{1 cm}
+\setlength{\TPVertModule}{1 cm}
+
 \AtBeginEnvironment{description}{\small}
 \begin{document}
+\begin{tikzpicture}[overlay, remember picture]
+	\node[yshift=5mm, xshift=-2.5cm] at (current page.south east) {\textcolor{gray}{\scriptsize \checklang{last modified on  }{dernière modification au} \today}};
+\end{tikzpicture}
 \setlength{\parindent}{0pt}
 \setkomafont{section}{\Large\bfseries\sffamily\MakeUppercase}
 \setlist{nosep}
@@ -48,7 +57,7 @@
 \begin{center}
 {	\huge \textsf{Giridhar \textbf{Kulkarni}}
 } \\[1ex]
-\href{mailto:giridhar.kulkarni@protonmail.ch}{\small \textcolor{gray}{giridhar.kulkarni@protonmail.ch}}	
+\href{https://codegiri.github.io/cv/index.html}{\textcolor{gray}{https://codegiri.github.io/cv/index.html}}
 \\
 \textcolor{gray}{\scriptsize%
 \begin{tabular}{c|c|c}
@@ -170,20 +179,29 @@
 }{%
 \minisec{Programmation}  C, C++, Python
 }
-\checklang{%
-\minisec{Typesetting}  \LaTeXe, Xe\TeX, pgf/tikz, Scribus / Illustrator, Word
-}{%
-\minisec{Composition} \LaTeXe, Xe\TeX, pgf/tikz, Scribus / Illustrator, Word
-}
+
 \checklang{%
 \minisec{Computational tools} Mathematica, MATLAB
 }{%
 \minisec{Outils de calcul} Mathematica, MATLAB
 }
+
+\checklang{\minisec{Web development}
+}
+{
+\minisec{Programmation du web}
+}
+HTML5, CSS, Javascript.
+
 \checklang{%
-\minisec{OS \& Utilities} Linux: arch/debian, Bash, Git, regex
+\minisec{Typesetting}  \LaTeXe, Xe\TeX, pgf/tikz.
 }{%
-\minisec{OS \& outils} Linux: arch/debian, Bash, Git, regex
+\minisec{Composition} \LaTeXe, Xe\TeX, pgf/tikz
+}
+\checklang{%
+\minisec{OS \& Utilities} arch/debian, Bash, Git, regex
+}{%
+\minisec{OS \& outils} arch/debian, Bash, Git, regex
 }
 \checklang{%
 \minisec{Photography} GIMP / Adobe Photoshop
@@ -270,12 +288,12 @@ Systèmes intérgables quantiques, l'approche des facteurs de formes
 \begin{minipage}{0.49\textwidth}
 	\begin{itemize}
 		\footnotesize
-	\item
-		\checklang{%
-			Participation to the Messier marathon (2013)
-		}{%
-		participation au marathon Méssier (2013)
-	}
+	%\item
+		%\checklang{%
+			%Participation to the Messier marathon (2013)
+		%}{%
+		%participation au marathon Méssier (2013)
+	%}
 \item 
 	\checklang{%
 		Coordinator of amateur astronomy club of IIT Guwahati (2012--2013)
@@ -460,15 +478,15 @@ Mathématiques appliquées à la biologie
 \end{itemize}
 \end{tabularx}
 %
+%\checklang{%
+%\section*{Seminars \& Conferences}
+%}{%
+%\section*{Séminaires \& conférences}
+%}
 \checklang{%
-\section*{Seminars \& Conferences}
+\section*{Conferences}
 }{%
-\section*{Séminaires \& conférences}
-}
-\checklang{%
-\subsection*{Conferences}
-}{%
-\subsection*{Conférences}
+\section*{Conférences}
 }
 \begin{itemize}[left=0pt, itemsep=.5em, label=\ding{111}]
 \item 
@@ -552,9 +570,9 @@ Mathématiques appliquées à la biologie
 \end{itemize}
 %
 \checklang{%
-\subsection*{Seminars}
+\section*{Seminars}
 }{%
-\subsection*{Séminaires}
+\section*{Séminaires}
 }
 \begin{itemize}[left=0pt, itemsep=.5em, label=\ding{111}]
 \item

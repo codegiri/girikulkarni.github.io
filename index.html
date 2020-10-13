@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--<title>G. Kulkarni (CV)</title>-->
+	<title>G. Kulkarni (CV)</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
@@ -12,11 +16,11 @@
             <li><a href="#research">Research</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#programming">Programming</a></li>
-            <li><a href="">Curriculum Vitæ</a></li>
+            <li><a href="./cv/cv.pdf">Curriculum Vitæ</a></li>
         </ul>
     </nav>
 	<!--<img src="glacier.JPG" width=100%>-->
-	<img src="photo.jpg" width= 200px>
+	<img src="photo.jpg" width= 200px id="profile-pic">
 	<br>
 	<br>
 	<br>
@@ -57,7 +61,108 @@
 			</li>
 	</ol>
 	</cite>
-	<h2>Teaching</h2>
+	<h2 id="teaching">Teaching</h2>
+	<div class="acordian" id="accordion-teaching">
+		<div class="card">
+			<div class="card-header" id="card-2020spring">
+				<h3 class="mb-0">
+					<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-2020spring" aria-expanded="false" aria-controls="collapse-2020spring">
+						Spring 2019-20 (January &mdash; June)
+					</button>
+				</h3>
+			</div>
+			<div class="collapse" aria-labelledby="card-2020spring" id="collapse-2020spring" data-parent="#accordion-teaching">
+				<div class="card-body">
+					<ul>
+						<li><span>(MaIE2A)</span> Maths tutorials to the first year students in electronics and informatics.</li>
+						<li><span>(MaIE4A)</span> Maths tutorials to the second year students in electronics and informatics.</li>
+						<li>Mathematics for first year biology students, lecures and tutorials.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="card-2019autumn">
+				<h3 class="mb-0">
+					<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2019autumn" aria-expanded="false" aria-controls="collapse-2019autumn">
+						Autumn 2019-20 (September &mdash; Decembre)
+					</button>
+				</h3>
+			</div>
+			<div class="collapse" aria-labelledby="card-2019autumn" id="collapse-2019autumn" data-parent:"#accordion-teaching">
+				<div class="card-body">
+					<ul>
+						<li>Tutorials for <em>mathematical methods of quantum mechanics</em> (first-year master level program)</li>
+						<li><span>(Math3A)</span> Tutorials in analysis to the second year maths students.</li>
+						<li><span>(MaPC1A)</span> Maths tutorials for first year students in physics and chemistry.</li>
+						<li><span>(MaIE1A)</span> Maths tutorials for first year students in electronics and informatics.</li>
+						<li>Maths tutorials for second-year economy students.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+
+		<div class="card">
+			<div class="card-header" id="card-2019spring">
+				<h3 class="mb-0">
+					<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse-2019spring" aria-expanded="false" aria-controls="collapse-2019spring">
+						Spring 2019-20 (January &mdash; June)
+					</button>
+				</h3>
+			</div>
+			<div class="collapse" aria-labelledby="card-2019spring" id="collapse-2019spring" data-parent:"#accordion-teaching">
+				<div class="card-body">
+					<ul>
+						<li><span>(MaIE4A)</span> Maths tutorials to the second year students in electronics and informatics.</li>
+						<li>Mathematics for first year biology students, lecures and tutorials.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<br>
+	<h2 id="programming">Programming</h2>
+	I am also a programming enthusiast, familiar with the following languages/ packages in a non-exhaustive, still expanding list:
+	<ol>
+		<li> C, C++, Python.</li>
+		<li> Mathematica, MATLAB</li>
+		<li> HTML, CSS, Javascript.</li>
+		<li> LaTeX, XeTeX, tikz.</li>
+		<li> git, regex.</li>
 </main>
+<footer>
+	<ul>
+		<li>
+			<a href="mailto:giridhar.kulkarni@protonmail.ch" target="_blank">
+			<img src="email.png" height=50px>
+			Email
+			</a>
+		</li>
+		<li>
+			<a href="https://orcid.org/0000-0001-8354-3120" target="_blank">
+			<img src="ORCID.png" height=25px>
+			ORCID
+			</a>
+		<li>
+			<a href="https://www.researchgate.net/profile/Giridhar_Kulkarni3" target="_blank">
+			<img src="RG.png" height=25px>
+			ResearchGate
+			</a>
+		<li>
+			<a href="https://www.linkedin.com/in/giridhar-k-55456570" target="_blank">
+			<img src="LI-Logo.png" height=25px>
+			</a>
+		</li>
+		<li>
+			<a href="https://github.com/codegiri/" target="_blank">
+				<img src="GitHub-Cat.png" height=25px>
+				<img src="GitHub_Logo.png" height=25px>
+			</a>
+		</li>
+	</ul>
+</footer>
 </body>
 </html>

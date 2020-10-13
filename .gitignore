@@ -24,8 +24,7 @@
 *.ps
 *.eps
 *.pdf
-!artifacts/draft*.pdf
-!artifacts/final*.pdf
+!cv/cv*.pdf
 # !figures/*.pdf
 !figures/*.eps
 
