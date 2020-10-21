@@ -47,6 +47,20 @@ header h1{
   display: inline-block;
 }
 
+.under_const{
+  background-color: yellow;
+  padding: 0px 10px;
+  color: red;
+  display: inline-block;
+  opacity: 0.75;
+}
+
+.info{
+  padding: 0px 10px;
+  background-color: yellow;
+  opacity: 0.625;
+}
+
 #logos{
   background-color: hsl(210, 30%, 75%);
   opacity: 0.75;
