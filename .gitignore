@@ -25,6 +25,7 @@
 *.eps
 *.pdf
 !cv/cv*.pdf
+!cv/CV*.pdf
 # !figures/*.pdf
 !figures/*.eps
 
