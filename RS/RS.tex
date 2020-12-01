@@ -1,0 +1,87 @@
+\documentclass[a4paper, 12pt, DIV=13]{scrarticle}
+
+\usepackage[utf8]{inputenx}
+\usepackage{libertinus}
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+\usepackage[useregional]{datetime2}
+
+\author{Giridhar V. \textbf{Kulkarni}}
+\title{Research Statement}
+\usepackage{blindtext}
+\addtokomafont{author}{\sffamily}
+\addtokomafont{date}{\sffamily}
+\makeatletter
+\renewcommand*{\maketitle}{%
+  \global\@topnum=\z@
+  \setparsizes{\z@}{\z@}{\z@\@plus 1fil}\par@updaterelative
+  \begin{center}%
+    {\usekomafont{title}{\huge \@title \par}}%
+    \rule[0.6\baselineskip]{0.5\textwidth}{1.5pt}
+    \\[-0.5\baselineskip]
+    {\ifx\@author\@empty\else\huge\usekomafont{author}\@author\par\fi}
+    \par
+    \vspace{2pt}
+    {\usekomafont{date}\large{\@date \par}}%
+  \end{center}%
+  \par
+  %\vspace{1em}
+}%
+\makeatother
+
+\begin{document}
+\maketitle 
+\addsec{Background}
+I am a recently graduated researcher in theoretical and mathemtical physics with focus on quantum integrable systems. I am primarily interested in development of non-perturbative approaches to the problems of exact computations of correlation functions and form-factors that makes use of mathematical framework responsible for the integrability.
+Previously, I was a PhD student at University of Burgundy in Dijon, France. I worked on my thesis on the ``Asymptotic analysis of the form-factors of quantum spin chains'' under the supervision Prof. Nikolai Kitanine. I sucessfully defended my PhD Thesis on 20th November 2020.
+\addsec{Motivations}
+The problem of exact computations of correlation functions is pivotal to the study of strongly interacting many-body quantum systems.
+All physically measurable quantities can be ultimately reduced to the computations of $n$-point correlation functions of local operators and related objects that are matrix elements of local operators called form-factors.
+The integrable systems provide us with sufficient algebraic and analytic tools to develop non-perturbative approaches for the computations of correlations and form-factors.
+Quantum spin chains are one of the most basic and fundamental examples of these integrable systems where recent developments have set the stage for exact computation of correlation functions and matrix elements of the local operators called form-factors as well as their further asymptotic analysis.
+Spin chains have also been realised in the laboratory, hence opening the doors to their empirical obervations through the neutron scattering experiments.
+Precisely for all these reasons, the integrable quantum spin chains are not just toy models in mathematical physics but they also bring around highly sophisticated mathematical techniques to solve physical problems and as a result, they find numerous theoretical and empirical applications from the string theory to the condensed matter physics.
+Hence I am motivated by and have a strong but not limiting predilection towards the integrable quantum spin chains.
+\par
+My recent work was focused on computation of form-factors of quantum spin chains since it they offer a powerful and effecient tool to study the two-point correlations and its long distance behviour.
+Form-factors of bound states can also reveal the role played by complex roots, leading to a possibility of comparison of exact results with predictions from the BJMST formalism.
+\addsec{Past work}
+There are two maintream approaches to the exact computation of correlation functions and form-factors in quantum spin chains. Although both of these uses the same hidden algebraic structure of integrability, they do so in two completely different ways.
+While the q-vertex operator algebras makes use of the affine yangian symmetry of the quantum spin chains directly in the infinite volume limit, the algebraic Bethe ansatz also works for finite-size chains.
+In the q-vertex operator algebra approach, one gets a system of PDE for form-factors called q-KZ equations, whose solutions give rise to multiple integral representations of these objects in the massive anistropic regime of the parameter landscape of the so-called XXZ anistropic quantum spin chain. The analysis using this approach for a more interesting case of massless spin chains, although it is technically acessible and has been used to obtain exact results, remains very complicated.
+On the other hand, algebraic Bethe ansatz works equally efficiently on the all paradigms of quantum spin chains, including in external field case. It gives determinant representations for form-factors of finite chains using the solutions of quantum inverse scattering problem and determinant formulae for scalar products of Bethe vectors.
+The computation of thermodynamic limit starting from these determinant representation of form-factors in the algebraic Bethe ansatz had remained a chanllenging problem, that was achieved for handful of examples.
+Due to these internal challenges, the exact results of the q-VOA based techniques for form-factors of massless spin chains were never reproduced from the algebraic Bethe ansatz approaches, which are otherwise manifestly simpler and more broadly applicable.
+The technique proposed in my thesis seeks to change this scenario as it gives an alernative path to the thermodynamic limit of the form-factors that is based on algebraic Bethe ansatz.
+We propose a series of \textit{matrix extraction} techniques that leads to integral equations in the thermodynamic limit. Solutions to these integral equations gives Cauchy determinant representations. We have futher developed supplementary techniques for the extraction and computing determinant of such infinite Cauchy matrices.
+This lead us to sucessful reproduction of the exact result for the two-spinon form-factors of XXX model / isotropic spin chains.
+We have also applied this technique to the form-factors of the bound states which involve complex roots described according to the Destri-Lowenstein picture.
+Our analysis has led us to a novel results with: 1. finite size determinants, 2. containing an emergent higher level structure, for the form-factors of bound states.
+\addsec{Outlook for the future}
+The technique that was proposed and developed in my PhD remains very much alive. We have only scratched the surface by applying it to the XXX model and it remains to explore the wider applicability of this technique.
+The broader applicability of this technique or a similar derived techniques has a promising outlook due to the robustness of the algebraic Bethe ansatz upon which it is based.
+The possible applications that can be explored include the anistropic case (including massless regime), spin chains at finite temperatures, out of equilibrium systems after a quantum quench etc.
+There have been already some recent sucessful attempts with a similar techniques for thermal form-factors.
+There are reasons to be optimstic about applications out-of-equilibrium scenarios and the novel structure we found for bound states is strong indication of it.
+I would be most welcoming and fortunate, given the circumstances permit, to be an active part of this exploration.
+\par
+Related to this, I also want to work on the problems raised at the technical level in the application of this technique that I did not manage to solve in my thesis, such as the explicit form of finite determiants obtained for form-factors of bound state as well as rigorous proof of some of the conjectures used in its application remains open.
+The first problem of auxiliary integrals will be a key to many other open problems. In particular, it can shed more light on the role of complex roots and the relation of bases in two formalisms: q-VOA and ABA.
+\par
+\vspace{.5em}
+Having said that, I am extremely forthcoming to learn about other techniques and paradigms in the large and ever expanding landscape of quantum integrability.
+I had some initial exposure to some of the possible areas of expansion through the seminars, conferences and in particular the Les Houches summer school that I've attended. 
+\\
+Here, I've attempted to list some of these possibile projects which, based on my current understanding, I would be able and interested to undertake.
+I sincerely hope that with my background of integrability would make me a suitable candidate to undertake these projects.
+\begin{enumerate}
+\item Non-equlibrium dynamics of spin chains and other integrable models has gained traction recently. The quantum quench problem that was alluded to in the previous paragraph is one important example where the integrability can be used and partial numerical analysis based on exact results can reveal dynamics of strongly interacting after a quench.
+Other important out-of-equilibrium scenarios include periodically driven systems, transport in open systems, etc. The approaches such as quench action, generalised hydrodynamics, GGE are specifically designed to investigate them. I would be happy to learn more about it and I hope that with my background I can also quickly adapt to it.
+\item Several frameworks inspired from algebraic Bethe ansatz that have been proposed and developed.
+On one hand, nested version of algebraic Bethe ansatz was introduced for the spin chains of higher rank algebras.
+Quantum seperation of variables was developed to extend the applicability of ABA to non-periodic boundary condition. It goes much further as it can be applied to spin chains with twisted or open boundary conditions, as well as spin chains of higher rank algebras.
+It has also been recently proposed for Hubbard model.
+The determinant representations for form-factors is (rightfully) object of immense active investigation in higher-rank and/or twisted scenarios, with promising level of success in some of these endeavours from both nested ABA and qSOV.
+I will be very much inerested in learning these approaches and work on the problems of finding determinant representations in these wider scenarios.
+\end{enumerate}
+\end{document}
