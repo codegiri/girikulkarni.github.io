@@ -1,0 +1,105 @@
+% !tex jobname = cover_letter_melbourne
+\documentclass[foldmarks=blmtP, fromemail, 12pt, DIV=15]{scrlttr2}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine}
+\usepackage{xspace}
+
+\newcommand{\toaddress}{%
+% Selection comitee chair \\ AlbaNova University Center\\ Nordita\\ Roslagstullsbacken 23\\ SE-106 91 Stockholm\\ Sweden % Nordita
+ %Selection comitee chair \\ Institut de Physique Théorique \\ CEA Saclay \\ 91191 Gif sur Yvette \\ France % Saclay
+%Selection comitee chair \\ School of Mathematics and Statistics	\\ University of Melbourne
+%Parkville VIC 3010	\\ Australia % Melbourne	
+Prof. Dr. Beisert, Niklas
+\\
+Wolfgang-Pauli-Str. 27
+\\
+8093 Zürich, Switzerland
+}
+\newcommand{\positionname}{ %
+% FELLOW20% Nordita
+% POSTDOCMATHPHYS [\#15155]% Saclay
+UniMelb-RFMP [\#15201, 0049490] % Melbourne	
+}
+\newcommand{\atinstitute}{ %
+% at Nordita%
+% at IPhT%
+%in the school of Mathematics and Statistics 
+in your research group at ITP-ETH Zurich
+}
+\newcommand{\addressto}{ %
+%selection comitee members% Nordita
+Prof. Beisert\xspace
+}
+\newcommand{\ingroup}{ %
+in mathematical physics group% Nordita
+}
+\newcommand{\aspostedin}{ %
+as posted in \href{https://www.mathjobs.org/jobs/UniMelb/RFMP}{mathjobs.org}%
+}
+\newcommand{\PIlist}{ %
+% Hubert Saleur and Jesper Jacobsen% Saclay
+% 
+}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[british]{babel}
+
+\usepackage{xifthen}
+\usepackage{xspace}
+
+\usepackage{paralist}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{txfonts}
+
+\usepackage[colorlinks]{hyperref}
+\usepackage{cleveref}
+
+% \setkomafont{author}{\normalfont}
+% \setkomafont{date}{\normalfont}
+% \setkomafont{title}{\scshape\small}
+
+\begin{document}
+\setkomavar{fromname}{Giridhar V. \textsc{Kulkarni}}
+\setkomavar{fromaddress}{14 bis, Rue de Montigny \\ 21000 Dijon, France}
+\setkomavar{fromemail}{giridhar.kulkarni@protonmail.ch}
+\setkomavar{subject}{Application for a post-doctoral position\atinstitute}
+\setkomavar{signature}{Giridhar V. Kulkarni}
+\begin{letter}{%
+\toaddress
+}
+\opening{Dear {\addressto},}
+
+I am researcher in mathematical physics recently graduated with a PhD degree from the University of Burgundy.
+I did my PhD thesis in supervision of Prof. Nikolai Kitanine on the `Asymptotic analysis of the form-factors of quantum spin chains'.
+I sucessfully defended my thesis on 20th November 2020.
+\par
+I am writing to apply for the postoctoral position in your group, after I saw the call for applications on INSPIRE. 
+I've submitted my CV, list of publications and a copy of my PhD thesis to the dedicated portal along with this letter. 
+\par
+Previously I've worked on algebraic Bethe ansatz techniques for the computations of form-factors and correlations of quantum spin chains. Jointly with my thesis advisor, we developed a new ABA based technique for taking thermodynamic limit of form-factor which led to us some very interesting results.
+\\
+I would like to continue to work on problems related with quantum integrable systems, which is why I am applying to the post-doctroal position in your group.
+You have worked on the relationship of integrable quantum spin chains to the AdS-CFT correspondance.
+I find it fascinating topic, especially because of its implications and potential applications that goes both ways. I am eager to learn more about the integrability in AdS-CFT and work on its developments.
+Although I have not previously worked on problems directly related to AdS/CFT, I believe that my background with previous work on quantum spin chains will be extremely useful in these endeavours.
+\ps{Please accept my sincere apologies for the delayed application, I thank you for considering my application.}
+% \\ 
+\closing{Yours truly,}
+\setkomavar*{enclseparator}{Attachements}
+\encl{%
+\vspace{-1em}
+\begin{enumerate}
+	\item CV, List of publications, teachings and talks.
+	\vspace{-1em}
+	\item Research statement
+	\vspace{-1em}
+	\item Final version of PhD Thesis
+\end{enumerate}
+}
+\end{letter}
+\end{document}

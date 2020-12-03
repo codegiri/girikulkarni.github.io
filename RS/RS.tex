@@ -1,10 +1,12 @@
-\documentclass[a4paper, 12pt, DIV=13]{scrarticle}
+\documentclass[a4paper, 11pt, DIV=15]{scrarticle}
 
 \usepackage[utf8]{inputenx}
 \usepackage{libertinus}
 \usepackage[T1]{fontenc}
 \usepackage[british]{babel}
 \usepackage[useregional]{datetime2}
+\usepackage{enumitem}
+\usepackage{tabularx}
 
 \author{Giridhar V. \textbf{Kulkarni}}
 \title{Research Statement}
@@ -17,7 +19,7 @@
   \setparsizes{\z@}{\z@}{\z@\@plus 1fil}\par@updaterelative
   \begin{center}%
     {\usekomafont{title}{\huge \@title \par}}%
-    \rule[0.6\baselineskip]{0.5\textwidth}{1.5pt}
+    \rule[0.6\baselineskip]{0.4\textwidth}{1.5pt}
     \\[-0.5\baselineskip]
     {\ifx\@author\@empty\else\huge\usekomafont{author}\@author\par\fi}
     \par
@@ -43,8 +45,7 @@ Spin chains have also been realised in the laboratory, hence opening the doors t
 Precisely for all these reasons, the integrable quantum spin chains are not just toy models in mathematical physics but they also bring around highly sophisticated mathematical techniques to solve physical problems and as a result, they find numerous theoretical and empirical applications from the string theory to the condensed matter physics.
 Hence I am motivated by and have a strong but not limiting predilection towards the integrable quantum spin chains.
 \par
-My recent work was focused on computation of form-factors of quantum spin chains since it they offer a powerful and effecient tool to study the two-point correlations and its long distance behviour.
-Form-factors of bound states can also reveal the role played by complex roots, leading to a possibility of comparison of exact results with predictions from the BJMST formalism.
+My recent work was focused on computation of form-factors of quantum spin chains. Form-factors offer a powerful and effecient tool to study the dynamical two-point correlations and their long distance behviour.
 \addsec{Past work}
 There are two maintream approaches to the exact computation of correlation functions and form-factors in quantum spin chains. Although both of these uses the same hidden algebraic structure of integrability, they do so in two completely different ways.
 While the q-vertex operator algebras makes use of the affine yangian symmetry of the quantum spin chains directly in the infinite volume limit, the algebraic Bethe ansatz also works for finite-size chains.
@@ -56,6 +57,7 @@ The technique proposed in my thesis seeks to change this scenario as it gives an
 We propose a series of \textit{matrix extraction} techniques that leads to integral equations in the thermodynamic limit. Solutions to these integral equations gives Cauchy determinant representations. We have futher developed supplementary techniques for the extraction and computing determinant of such infinite Cauchy matrices.
 This lead us to sucessful reproduction of the exact result for the two-spinon form-factors of XXX model / isotropic spin chains.
 We have also applied this technique to the form-factors of the bound states which involve complex roots described according to the Destri-Lowenstein picture.
+This was very important advancement since form-factors of bound states can reveal the role played by complex roots, leading to a possibility of comparison of exact results with predictions from the BJMST formalism.
 Our analysis has led us to a novel results with: 1. finite size determinants, 2. containing an emergent higher level structure, for the form-factors of bound states.
 \addsec{Outlook for the future}
 The technique that was proposed and developed in my PhD remains very much alive. We have only scratched the surface by applying it to the XXX model and it remains to explore the wider applicability of this technique.
@@ -73,15 +75,37 @@ Having said that, I am extremely forthcoming to learn about other techniques and
 I had some initial exposure to some of the possible areas of expansion through the seminars, conferences and in particular the Les Houches summer school that I've attended. 
 \\
 Here, I've attempted to list some of these possibile projects which, based on my current understanding, I would be able and interested to undertake.
-I sincerely hope that with my background of integrability would make me a suitable candidate to undertake these projects.
-\begin{enumerate}
-\item Non-equlibrium dynamics of spin chains and other integrable models has gained traction recently. The quantum quench problem that was alluded to in the previous paragraph is one important example where the integrability can be used and partial numerical analysis based on exact results can reveal dynamics of strongly interacting after a quench.
+I sincerely hope that that my background of integrability would make me a suitable candidate to undertake these projects.
+\begin{description}[left=0pt]
+\item[Out of equlibrium problems] Non-equlibrium dynamics of spin chains and other integrable models has gained traction recently. The quantum quench problem that was alluded to in the previous paragraph is one important example where the integrability can be used and partial numerical analysis based on exact results can reveal dynamics of strongly interacting after a quench.
 Other important out-of-equilibrium scenarios include periodically driven systems, transport in open systems, etc. The approaches such as quench action, generalised hydrodynamics, GGE are specifically designed to investigate them. I would be happy to learn more about it and I hope that with my background I can also quickly adapt to it.
-\item Several frameworks inspired from algebraic Bethe ansatz that have been proposed and developed.
+\item[Higher rank / twisted spin chains] Several frameworks inspired from algebraic Bethe ansatz that have been proposed and developed.
 On one hand, nested version of algebraic Bethe ansatz was introduced for the spin chains of higher rank algebras.
 Quantum seperation of variables was developed to extend the applicability of ABA to non-periodic boundary condition. It goes much further as it can be applied to spin chains with twisted or open boundary conditions, as well as spin chains of higher rank algebras.
 It has also been recently proposed for Hubbard model.
 The determinant representations for form-factors is (rightfully) object of immense active investigation in higher-rank and/or twisted scenarios, with promising level of success in some of these endeavours from both nested ABA and qSOV.
 I will be very much inerested in learning these approaches and work on the problems of finding determinant representations in these wider scenarios.
+\item[Finite temperature case]
+Spins chains at finite, non-zero temperature can be studied in terms of the trotterized, quantum transfer matrix.
+The study of correlations using the thermal form-factor series, i.e. the form-factors of the excitations of quantum transfer matrix has also been proposed and developed. There are also indications that technique similar to \emph{matrix extraction} or factorisation of determinants can be used to efficiently compute the thermodynamic limit of the thermal form-factors.
+\item[Integrable spin chains in AdS-CFT duality]
+Spin chains occur in the AdS-CFT conjecture as the Hamiltonian of integrable quantum spin chain can be found in the planar limit of $\mathcal{N}=4$ supersymmetric Yang-Mills theory.
+I am very much eager to learn more about this correspondance with integrable quantum spin chains as it can be potentially used to compute the correlations in $\mathcal{N}=4$ SYM using the techniques of quantum integrability such as ABA or qSOV.
+I would be eager to work on project related to this theme.
+\item[Exactly solvable models and combinatorics]
+Integrable spin chains and the related exactly solvable models of 2D statistical mechanics are also important from the combinatorial point of view.
+The partition function of these models can be used to study multivariant symmetric polynomials and has immense applications to combinatorics.
+One of the examples of it was the use of Izergin determianant for partition functions of six-vertex model with twisted boundary condition to the combinatorial problem of alternating sign matrices.
+This field has seen constant growth and several such relations have been discovered.
+The XXZ model with the value of anistropy parameter $\Delta=\frac{1}{2}$ has also been show to have immense applications to the combinatorial problems and hence it also referred as the combinatorial point.
+I would like to learn more about it and work on the projects related to these applications of integrable models/ exactly solvable models.
+\end{description}
+\vspace{2\baselineskip}
+\addsec{List of referees for the letters of recommendations}
+\begin{enumerate}
+    \item Nikolai Kitanine (University of Burgundy)
+    \item Olalla Castro-Alvaredo (City, University of London)
+    \item Robert Weston (Heriott-Watt University)
+    \item Karol Kozlowski (ENS de Lyon)
 \end{enumerate}
 \end{document}
