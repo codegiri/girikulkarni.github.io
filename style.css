@@ -4,14 +4,17 @@
   /*top: 0;*/
 }
 
-header {
+.main header {
+  background-image:url("glacier.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+header{
   width: 100%;
   color: white;
   text-align: center;
-  background-image:url("glacier.jpg");
-  background-repeat: no-repeat;
+  height: 60px;
   background-size: cover;
-  height: 500px;
 }
 
 nav {
@@ -128,4 +131,10 @@ footer{
 footer li {
   display: inline-block;
   margin: 15px 20px;
+}
+
+.arxiv {
+  background-color: #b31b1b;
+  color: #fff;
+  padding: 1pt 2pt;
 }
