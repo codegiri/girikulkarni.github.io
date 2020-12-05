@@ -28,6 +28,7 @@
 !cv/CV*.pdf
 !RS/RS*.pdf
 !RS/rs*.pdf
+RS/cover_letter*
 # !figures/*.pdf
 !figures/*.eps
 
