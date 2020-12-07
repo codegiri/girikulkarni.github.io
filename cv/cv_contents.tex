@@ -41,12 +41,13 @@
 \end{tabularx}
 \begin{tabularx}{1\textwidth}{M | D}
 	\checklang{Mobile phone no.}{n\textsuperscript{o} de tél. portable}	&	\href{tel:+33783296075}{+33\space\textperiodcentered\space 7 83 29 60 75}
-\end{tabularx}
-\begin{tabularx}{1\textwidth}{M | D}
+%\end{tabularx}
+%\begin{tabularx}{1\textwidth}{M | D}
+	\\
 \checklang{Email addresses}{courriels}					%&	\href{mailto:giridhar.kulkarni@u-bourgogne.fr}{giridhar.kulkarni@u-bourgogne.fr
 
 	%\\
-			&	\href{mailto:giridhar.kulkarni@protonmail.ch}{giridhar.kulkarni@protonmail.ch}
+			&	\href{mailto:giridhar.kulkarni@protonmail.ch}{giridhar.kulkarni@protonmail.ch}%
 \end{tabularx}
 \end{minipage}
 \begin{minipage}{.24\textwidth}
@@ -54,7 +55,7 @@
 	\fbox{\includegraphics[height=4.5cm]{photo.png}}
 \end{minipage}
 %
-\\[1em]
+\\
 \begin{minipage}{0.74\textwidth}
 \checklang{%
 \section*{Employment}
@@ -205,8 +206,17 @@ astronomie, cuisine, jeux de société, vélo, tennis
 \\
 %
 \section*{Publications}
-\fullcite{KitK19}
-\vspace{-1em}
+\def\arraystretch{.25}
+\begin{tabularx}{\textwidth}{>{\bfseries}lX}
+	\checklang{Journals}{Revues}	&
+\vspace{-.75em}
+\begin{enumerate}[topsep=0em, left=0em, label=\textbf{\arabic*.}, itemsep=.5em]
+	\item \fullcite{KitK19}
+\end{enumerate}
+\\
+	\checklang{Thesis}{Thèse}	&	
+	\fullcite{Kul20}
+\end{tabularx}
 \checklang{%
 \paragraph*{Key area of interest: } Quantum integrable systems, Algebraic Bethe ansatz, Form-factor approach 
 }{%
@@ -268,7 +278,7 @@ Spring 2020
 printemps 2020
 }
 &%
-\vspace{-.5em}
+\vspace{-.75em}
 \begin{itemize}[itemsep=.5em, left=0em, label=\ding{227}]
 \item
 \checklang{%
@@ -320,7 +330,7 @@ Autumn 2019
 automne 2019
 }
 &%
-\vspace{-.5em}
+\vspace{-.75em}
 \begin{itemize}[left=0em, label=\ding{226}, itemsep=.5em]
 \item
 \checklang{%

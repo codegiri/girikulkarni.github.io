@@ -3,10 +3,18 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{libertine}
+\usepackage{csquotes}
 \usepackage[british]{babel}
 \usepackage[useregional]{datetime2}
 
-\usepackage{biblatex}
+\usepackage[%
+		backend=biber,%
+		style=ext-alphabetic-verb,%
+		articlein=false,%
+		giveninits=true,%
+		date=year,%
+		useprefix=false,%
+		]{biblatex}
 \addbibresource{mypub.bib}
 \usepackage{hyperref}
 
@@ -25,8 +33,8 @@
     \item "On the thermodynamic limit of the bound state form-factors in XXX chains: Part I", with N. Kitanine, expected by Janurary 2021.
 \end{enumerate}
 \minisec{Thesis and dissertation}
-\begin{description}
-\item[PhD Thesis]
-"Asymptotic analysis of the form-factors of quantum spin chains", G. Kulkarni, \emph{Thesis of University of Burgundy}, arxiv identifier : unknown (submission math.ph/3497317), scheduled to be announced on 07/12/2020. 
-\end{description}
+\begin{itemize}
+    \item
+    \fullcite{Kul20}
+    \end{itemize}
 \end{document}

@@ -31,7 +31,7 @@
 \usepackage{ocgx2}
 
 \newif\iflangfrench
-\langfrenchfalse
+\langfrenchtrue
 \newcommand{\checklang}[2]{%
 	\ifthenelse{\boolean{langfrench}}{#2}{#1}%
 }
@@ -50,15 +50,6 @@
 \begin{document}
 \begin{tikzpicture}[overlay, remember picture]
 	\node[anchor=south east] at (current page.south east) {\textcolor{gray}{\scriptsize \checklang{last modified on  }{dernière modification au} \today}};
-	\node[anchor=north east] at (current page.north east) {\hyperlink{page.1}{EN \includegraphics[height=0.5\baselineskip]{gb.png}} | \hyperlink{page.3}{\includegraphics[height=0.5\baselineskip]{fr.png} FR}};
-\end{tikzpicture}
-\input{cv_contents.tex}
-\clearpage
-\langfrenchtrue
-\normalsize
-\begin{tikzpicture}[overlay, remember picture]
-	\node[anchor=south east] at (current page.south east) {\textcolor{gray}{\scriptsize \checklang{last modified on  }{dernière modification au} \today}};
-	\node[anchor=north east] at (current page.north east) {\hyperlink{page.1}{EN \includegraphics[height=0.5\baselineskip]{gb.png}} | \hyperlink{page.3}{\includegraphics[height=0.5\baselineskip]{fr.png} FR}};
 \end{tikzpicture}
 \input{cv_contents.tex}
 \end{document}

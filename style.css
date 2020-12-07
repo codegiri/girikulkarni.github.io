@@ -132,9 +132,7 @@ footer li {
   display: inline-block;
   margin: 15px 20px;
 }
-
-.arxiv {
-  background-color: #b31b1b;
-  color: #fff;
-  padding: 1pt 2pt;
+.publinks li {
+  display: inline-block;
+  margin: 15px 20px;
 }

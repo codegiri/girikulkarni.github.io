@@ -1,0 +1,106 @@
+% !tex jobname = cover_letter_melbourne
+\documentclass[foldmarks=blmtP, fromemail, 12pt, DIV=15]{scrlttr2}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine}
+\usepackage{xspace}
+
+\def\toaddress{%
+% Selection comitee chair \\ AlbaNova University Center\\ Nordita\\ Roslagstullsbacken 23\\ SE-106 91 Stockholm\\ Sweden % Nordita
+ %Selection comitee chair \\ Institut de Physique Théorique \\ CEA Saclay \\ 91191 Gif sur Yvette \\ France % Saclay
+%Selection comitee chair \\ School of Mathematics and Statistics	\\ University of Melbourne
+%Parkville VIC 3010	\\ Australia % Melbourne	
+%Prof. Dr. Beisert, Niklas
+Post-doctoral selection committee
+\\
+%Wolfgang-Pauli-Str. 27
+%Institut de Physique Théorique, CEA Saclay \\ 91191 Gif sur Yvette, France % Saclay
+C.N. Yang Institute for Theoretical Physics
+\\
+Stony Brook University
+\\
+Stony Brook, N.Y. 11794-3840, U.S.A.
+%\\
+%8093 Zürich, Switzerland
+}
+\newcommand{\positionname}{%
+% FELLOW20% Nordita
+% POSTDOCMATHPHYS [\#15155]% Saclay
+%UniMelb-RFMP [\#15201, 0049490] % Melbourne	
+%\#17642\xspace
+POSTDOC21 [\#17393]
+}
+\newcommand{\atinstitute}{%
+% at Nordita%
+% at IPhT%
+%in the school of Mathematics and Statistics 
+%at IPhT Saclay\xspace
+C.N. Yang Institute of Theoretical Physics\xspace
+}
+\def\addressto{%
+%selection comitee members% Norditam
+members of the selection committee\xspace
+%Prof. Beisert\xspace
+}
+\def\ingroup{%
+in the mathematical physics group\xspace% Nordita
+}
+\newcommand{\aspostedin}{%
+as posted in \href{https://www.mathjobs.org/jobs/UniMelb/RFMP}{mathjobs.org}%
+}
+\newcommand{\PIlist}{%
+% Hubert Saleur and Jesper Jacobsen% Saclay
+% 
+}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage[british]{babel}
+
+\usepackage{xifthen}
+\usepackage{xspace}
+
+\usepackage{paralist}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{txfonts}
+
+\usepackage[colorlinks]{hyperref}
+\usepackage{cleveref}
+
+% \setkomafont{author}{\normalfont}
+% \setkomafont{date}{\normalfont}
+% \setkomafont{title}{\scshape\small}
+
+\begin{document}
+\setkomavar{fromname}{Giridhar V. \MakeUppercase{Kulkarni}}
+\setkomavar{fromaddress}{14 bis, Rue de Montigny \\ 21000 Dijon, France}
+\setkomavar{fromemail}{giridhar.kulkarni@protonmail.ch}
+\setkomavar{subject}{Application for a post-doctoral position (\positionname)}
+\setkomavar{signature}{Giridhar V. Kulkarni}
+\begin{letter}{%
+\toaddress
+}
+\opening{Dear \addressto,}
+%I am researcher in mathematical physics recently graduated with a PhD degree from the University of Burgundy.
+%I did my PhD thesis in supervision of Prof. Nikolai Kitanine on the `Asymptotic analysis of the form-factors of quantum spin chains'.
+%I sucessfully defended my thesis on 20th November 2020.
+%\par
+I am writing to apply for the postoctoral position \positionname \ingroup\space\atinstitute. 
+Previously, I was a PhD student workind under the direction of Nikolai Kitanine at University of Burgundy, I defended my thesis "Asymptotic analysis of the form-factors of quantum spin chains" on 20th Novermber this year.
+
+I am interested in studying the hidden symmetries of exactly solvable models / quantum integrable systems and their applications in development of non-perturbative approaches for exact computations of correlation functions.
+In my doctoral research work, I worked with my advisor on algebraic Bethe ansatz method for form-factors of quantum spin chains, in which we developed a new technique to compute form-factors in thermodynamic limit.
+It was used to reproduce the previous result from the q-vertex operator algebra approach for the 2-spinon form-factors of XXX model and we've also found some novel results for the higher form-factors containing bound state using this approach.
+\par
+I would like to continue to work on similar problems, that are related with quantum integrability and/or conformal symmetries of field theories. That is the particular reason that I am applying for this post-doctroal fellowship.
+If am selected, I will be delighted to work with Prof. V. Korepin and I hope that I will also have numerous opportunities to discussions with emeritus fellows in the institute: B. McCoy, L. Takhtadzhyan, that will be greatly helpful in development of my academic career. 
+\ps{Thank you all for your consideration!}
+\closing{Yours truly,}
+\vspace{-1em}
+\setkomavar*{enclseparator}{Sumbissions}
+\encl{CV, Research Statement, List of publications}
+\end{letter}
+\end{document}
